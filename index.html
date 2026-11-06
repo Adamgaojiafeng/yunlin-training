@@ -8,7 +8,7 @@
   <meta property="og:description" content="整合雲林在地 12 大職訓機構與大專院校課程連結，提供開訓日 7 個工作日前參訓備案檢核與退輔會職訓補助規定宣導。">
   <meta property="og:image" content="https://drive.google.com/thumbnail?id=1fuDAcmApht5sQEQb-aAlZxr8s9WXnSCd&sz=w500">
   <link rel="icon" href="https://drive.google.com/thumbnail?id=1fuDAcmApht5sQEQb-aAlZxr8s9WXnSCd&sz=w200">
-<style>
+  <style>
     * { box-sizing: border-box; }
     html, body {
       margin: 0;
@@ -27,12 +27,17 @@
     }
     .iframe-mask-container iframe {
       position: absolute;
-      /* 改為 0，讓畫面完整顯示、不再被切到上方 */
       top: 0px;
       left: 0;
       width: 100%;
       height: 100%;
       border: none;
+    }
+    @media (max-width: 600px) {
+      .iframe-mask-container iframe {
+        top: -50px;
+        height: calc(100% + 50px);
+      }
     }
   </style>
 </head>
